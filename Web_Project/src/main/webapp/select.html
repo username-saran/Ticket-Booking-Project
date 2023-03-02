@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Select</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <style>
+          body{
+               background-image: linear-gradient(rgb(1, 59, 95),rgb(12, 222, 184));
+               background-repeat: no-repeat;
+               background-attachment: fixed;
+          }
+          .container{
+               background-color: white;
+               margin-top: 70px;
+               width: 70%;
+               border-radius: 20px;
+               padding: 30px;
+          }
+          a{
+               margin: 30px;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="container-fluid">
+          <div class="row">
+               <div class="col" align="center" style="background-color: white;">
+                    <h1>Online Ticket Booking System</h1><sub><h6>Easy ur work</h6></sub>
+               </div>
+          </div>
+     </div>
+     <div class="container">
+          <h2 align="center" style="margin-bottom: 30px;">S E L E C T - M O V I E</h2>
+          <div class="row">
+               <div class="col" align="center">
+                    <form action="select" method="post">
+                         <table class="table table-borderless">
+                         	  
+                              <tr>
+                                   <td>Select Movie: </td>
+                                   <td>
+                                        <select name="movie" id="movie" class="form-select" required="required">
+                                             <option value="null">Select Movie</option>
+                                             <option value="Thuniv">Thunivu</option>
+                                             <option value="Varisu">Varisu</option>
+                                             <option value="Avatar:Way Of Water">Avatar:Way Of Water</option>
+                                             <option value="Irumbhu kai Mayavi">Irumbhu kai Mayavi</option>
+                                             <option value="Bhediya">Bhediya</option>
+                                             <option value="Kantara">Kantara</option>
+                                             <option value="John Wick 4">John Wick 4</option>
+                                        </select>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>Select Date:</td>
+                                   <td>
+                                        <input type="date" name="date" id="date" class="form-control" required="required">
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        Select time:
+                                   </td>
+                                   <td>
+                                        <select name="time" id="time" class="form-select" required="required">
+                                             <option value="null">Select Time</option>
+                                             <option value="10:00 AM">10:00 AM</option>
+                                             <option value="01:00 PM">01:00 PM</option>
+                                             <option value="04:00 PM">04:00 PM</option>
+                                             <option value="07:00 PM">07:00 PM</option>
+                                        </select>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        Select type:
+                                   </td>
+                                   <td>
+                                        <select name="type" id="type" class="form-select" required="required">
+                                             <option value="null">Select Type</option>
+                                             <option value="Gold">Gold</option>
+                                             <option value="Elite">Elite</option>
+                                             <option value="Normal">Normal</option>
+                                        </select>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>Number of Seats:</td>
+                                   <td>
+                                        <input type="number" name="seats" id="seats" class="form-control" placeholder="Seats" required="required">
+                                   </td>
+                              </tr>
+                             <tr align="center">
+                                   <td colspan="2">
+                                        <input type="submit" value="Submit" class="btn btn-primary" >
+                                   </td>
+                             </tr>
+                         </table>
+                    </form>
+               </div>
+          </div>
+     </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
